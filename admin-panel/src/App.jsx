@@ -1,12 +1,13 @@
+import { useContext } from 'react'
 import './App.css'
+import { MainContext } from './context/mainContext'
+import { Login, User } from './pages';
 
 function App() {
+  const {user} = useContext(MainContext)
 
-  return (
-    <>
-      <h2 className='bg-slate-400'>Hello world</h2>
-    </>
-  )
+  console.log(user);
+  return (user ? <User /> : <Login/> )
 }
 
 export default App
