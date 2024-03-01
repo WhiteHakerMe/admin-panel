@@ -1,8 +1,8 @@
 import {
-    UploadOutlined,
     UserOutlined,
     VideoCameraOutlined,
   } from '@ant-design/icons';
+import { Product } from '../pages';
 
 
 export const menuData = [
@@ -23,7 +23,7 @@ export const menuData = [
 export const routersData = [
     {
         id: 0,
-        element: <User />,
+        element: <Product />,
         path: '/'
     },
     {

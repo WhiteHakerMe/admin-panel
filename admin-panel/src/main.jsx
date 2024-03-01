@@ -7,7 +7,9 @@ import { MainContextProvider } from './context/mainContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <MainContextProvider>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </MainContextProvider>
   </React.StrictMode>,
 )
