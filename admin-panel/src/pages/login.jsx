@@ -6,7 +6,7 @@ const Login = () => {
 
   const { user, setUser } = useContext(MainContext)
   const onFinish = (values) => {
-    if (values.username == "ilyosbek" && values.Password == "ilyosbek") {
+    if (values.username == "ilyosbek" && values.password == "ilyosbek") {
       setUser(true)
       console.log(user);
     }
